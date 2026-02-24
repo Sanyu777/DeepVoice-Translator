@@ -1,0 +1,45 @@
+# --- 系统与 IDE 缓存 ---
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# --- 敏感信息 (千万不能传！) ---
+.env
+.env.local
+.env.secret
+
+# --- 项目数据 (忽略输入输出的媒体文件，但保留文件夹结构) ---
+data/input/*
+data/work/*
+data/output/*
+
+# 例外：允许 Git 追踪文件夹本身，但不追踪里面的文件
+!data/input/.gitkeep
+!data/work/.gitkeep
+!data/output/.gitkeep
+
+# --- 大文件与日志 ---
+*.log
+*.mp4
+*.mp3
+*.wav
+*.json
+# 如果你某些 JSON 是配置文件则取消下面这行的注释
+# !config.json
+
+# --- 库与权重 ---
+# 忽略下载的模型权重文件（通常很大）
+models/
+*.pth
+*.ckpt
+*.yaml
+
+# --- UV 包管理器 ---
+# 通常建议保留 uv.lock 以保证版本一致性，
+# 但如果你在多台机器上有严重的依赖冲突，可以考虑忽略它。
+# uv.lock

@@ -1,0 +1,19 @@
+[project]
+name = "DeepVoice-Translator"
+version = "0.1.0"
+description = "基于 DeepSeek 和 WhisperX 的自动化视频翻译配音流水线"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub<1.0",
+    "openai>=1.0.0",
+    "edge-tts",
+    "pydub",
+    "python-dotenv",
+    "gradio",
+]
+
+# 💡 这里保留 sources，但不强制在 project.dependencies 里引用
+[tool.uv.sources]
+whisperx = { path = "libs/whisperX" }
+demucs = { path = "libs/demucs_src" }
