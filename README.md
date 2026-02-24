@@ -32,7 +32,7 @@
 
 ```powershell
 # 1. 克隆仓库
-git clone [https://github.com/你的用户名/DeepVoice-Translator.git](https://github.com/你的用户名/DeepVoice-Translator.git)
+git clone [https://github.com/Sanyu777/DeepVoice-Translator.git](https://github.com/Sanyu777/DeepVoice-Translator.git)
 cd DeepVoice-Translator
 
 # 2. 创建环境 (建议使用 uv)
